@@ -3,7 +3,7 @@ HOMEPAGE = "http://www.nonlinear-labs.de"
 BUGTRACKER = "http://www.nonlinear-labs.de"
 SECTION = "Applications/System"
 
-DEPENDS = "util-linux glibmm libsoup-2.4 avahi dbus"
+DEPENDS = "util-linux glibmm libsoup-2.4 avahi dbus freetype"
 
 # For now, so i can test
 LICENSE = "CLOSED"
