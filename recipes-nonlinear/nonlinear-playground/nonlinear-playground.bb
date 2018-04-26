@@ -1,9 +1,9 @@
 SUMMARY = "Nonlinear Labs Playground"
 HOMEPAGE = "http://www.nonlinear-labs.de"
-BUGTRACKER = "http://www.nonlinear-labs.de"
+BUGTRACKER = "https://github.com/nonlinear-labs-dev/C15/issues"
 SECTION = "Applications/System"
 
-DEPENDS = "util-linux glibmm libsoup-2.4 avahi dbus freetype boost"
+DEPENDS = "util-linux glibmm libsoup-2.4 avahi dbus freetype boost gwt-native"
 
 # For now, so i can test
 LICENSE = "CLOSED"
@@ -16,7 +16,7 @@ PV = "master+git-${SRCPV}"
 
 #RDEPENDS_${PN} = ""
 
-EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/playground"
+EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/playground -DJARSDIR=$(GWT_COMPILER_DIR)"
 
 inherit cmake
 
