@@ -3,7 +3,7 @@ HOMEPAGE = "http://www.gwtproject.org/"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://COPYING;md5=986f6fcbfc47ef0b18ef98427108fcc3"
 
-DEPENDS = "java-native"
+DEPENDS = "jamvm-native"
 
 SRC_URI = "https://storage.googleapis.com/gwt-releases/gwt-${PV}.zip"
 
