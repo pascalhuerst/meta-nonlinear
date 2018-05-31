@@ -12,10 +12,5 @@ S = "${WORKDIR}/gwt-${PV}"
 
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
-do_install[noexec] = "1"
-
-do_install() {
-        unzip -u ${S}/gwt-${PV} gwt-${PV}/gwt-\*.jar -d ${D}${bindir}/gwt-${PV}
-}
 
 BBCLASSEXTEND = "native nativesdk"
