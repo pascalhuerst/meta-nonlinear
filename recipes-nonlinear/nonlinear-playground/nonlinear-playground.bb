@@ -16,7 +16,7 @@ PV = "master+git-${SRCPV}"
 
 #RDEPENDS_${PN} = ""
 
-EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/playground -DJARSDIR=$(GWT_COMPILER_DIR)"
+EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/playground -DJARSDIR=${GWT_COMPILER_DIR}"
 
 inherit cmake
 
