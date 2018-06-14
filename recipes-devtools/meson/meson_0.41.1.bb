@@ -8,7 +8,7 @@ SRC_URI = " \
     git://github.com/mesonbuild/meson.git \
 "
 
-SRCREV = "b25d3e4d3f2b4d37029a507cc089bdde643c6240"
+SRCREV = "c5e7774e27c56f09c3a16458c6d9931e01cee100"
 
 S = "${WORKDIR}/git"
 
