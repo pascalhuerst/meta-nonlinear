@@ -13,8 +13,6 @@ IMAGE_INSTALL = "\
 	systemd-analyze \
 	strace \
 	jack-server jack-utils \
-#	nonlinear-nlaudio \
-#	nonlinear-playground \
 	"
 
 IMAGE_LINGUAS = " "
