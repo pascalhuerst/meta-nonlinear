@@ -17,14 +17,14 @@ IMAGE_INSTALL = "\
 
 IMAGE_LINGUAS = " "
 
-usr_merge() {
-  for d in lib bin sbin; do
-    cp -a ${IMAGE_ROOTFS}/$d/* ${IMAGE_ROOTFS}/usr/$d/
-    rm -rf ${IMAGE_ROOTFS}/$d
-    ln -s usr/$d ${IMAGE_ROOTFS}/$d
-  done
-}
-IMAGE_PREPROCESS_COMMAND += "usr_merge;"
+#usr_merge() {
+#  for d in lib bin sbin; do
+#    cp -a ${IMAGE_ROOTFS}/$d/* ${IMAGE_ROOTFS}/usr/$d/
+#    rm -rf ${IMAGE_ROOTFS}/$d
+#    ln -s usr/$d ${IMAGE_ROOTFS}/$d
+#  done
+#}
+#IMAGE_PREPROCESS_COMMAND += "usr_merge;"
 
 
 LICENSE = "MIT"
