@@ -14,7 +14,6 @@ IMAGE_INSTALL = "\
 	strace \
 	jack-server jack-utils \
 	nonlinear-nlaudio \
-	nonlinear-playground \
 	"
 
 IMAGE_LINGUAS = " "
