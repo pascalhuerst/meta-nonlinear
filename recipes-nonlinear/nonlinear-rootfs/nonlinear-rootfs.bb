@@ -13,14 +13,12 @@ SRC_URI = "\
 	file://etc/udev/rules.d/100-usbnet.rules \
 	file://etc/dhcpd-usbnet.conf \
 	file://etc/dhcpd-wlan.conf \
-	file://etc/systemd/journald.conf \
 	file://etc/systemd/system/internalstorage.mount \
 	file://etc/systemd/system/accesspoint.service \
 	file://etc/systemd/system/dhcpd-wlan.service \
 	file://etc/systemd/system/dhcpd-usbnet.service \
 	file://etc/systemd/system/usbnet.service \
 	file://etc/hostapd.conf \
-	file://etc/fstab \
 	file://etc/network/interfaces \
 	file://etc/profile.d/add_playground_path.sh \
 	file://etc/ssh/sshd_config \
