@@ -18,7 +18,6 @@ PV = "master+git-${SRCPV}"
 
 EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/playground -DJARSDIR=${TOPDIR}/tmp-glibc/work/corei7-64-nonlinear-linux/gwt/2.8.2-r0/gwt-2.8.2"
 
-inherit cmake
-inherit java-library
+inherit cmake javanative
 
 FILES_${PN} = "/nonlinear/playground"
