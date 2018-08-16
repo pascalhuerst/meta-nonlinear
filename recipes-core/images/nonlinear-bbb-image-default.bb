@@ -1,5 +1,10 @@
 SUMMARY = "Default nonlinear deploy image"
 
+NONLINEAR_KMODS = " \
+	kernel-module-lpc_bb_driver \
+	kernel-module-epsi_driver \
+	"
+
 IMAGE_INSTALL = "\
 	${CORE_IMAGE_EXTRA_INSTALL} \
 	packagegroup-core-boot \
@@ -12,6 +17,7 @@ IMAGE_INSTALL = "\
 	kernel-modules \
 	valgrind gdb \
 	systemd-analyze \
+	${NONLINEAR_KMODS} \
 	"
 
 IMAGE_LINGUAS = " "
@@ -25,7 +31,8 @@ IMAGE_LINGUAS = " "
 #}
 #IMAGE_PREPROCESS_COMMAND += "usr_merge;"
 
-MACHINE_EXTRA_RRECOMMENDS += "kernel-module-lpc_bb_driver kernel-module-epsi_driver"
+#MACHINE_EXTRA_RRECOMMENDS += "kernel-module-lpc_bb_driver kernel-module-epsi_driver"
+KERNEL_MODULE_AUTOLOAD += "${NONLINEAR_KMODS}"
 
 LICENSE = "MIT"
 
