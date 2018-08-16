@@ -33,8 +33,6 @@ IMAGE_LINGUAS = " "
 #}
 #IMAGE_PREPROCESS_COMMAND += "usr_merge;"
 
-KERNEL_MODULE_AUTOLOAD += "lpc_bb_driver espi_driver"
-
 LICENSE = "MIT"
 
 inherit core-image
