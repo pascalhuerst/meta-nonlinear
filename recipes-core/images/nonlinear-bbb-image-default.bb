@@ -2,7 +2,7 @@ SUMMARY = "Default nonlinear deploy image"
 
 NONLINEAR_KMODS = " \
 	lpc-bb-driver \
-	epsi-driver \
+	espi-driver \
 	"
 
 IMAGE_INSTALL = "\
@@ -30,8 +30,6 @@ IMAGE_LINGUAS = " "
 #  done
 #}
 #IMAGE_PREPROCESS_COMMAND += "usr_merge;"
-
-KERNEL_MODULE_AUTOLOAD += "${NONLINEAR_KMODS}"
 
 LICENSE = "MIT"
 

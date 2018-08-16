@@ -12,4 +12,6 @@ SRC_URI = "git://github.com/nonlinear-labs-dev/lpc_bb.git;branch=master"
 
 RPROVIDES_${PN} += "kernel-module-lpc_bb_driver"
 
+KERNEL_MODULE_AUTOLOAD += "lpc_bb_driver"
+
 FILES_${PN} = "${libdir}"

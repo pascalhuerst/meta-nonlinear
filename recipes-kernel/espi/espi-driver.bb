@@ -12,4 +12,6 @@ SRC_URI = "git://github.com/nonlinear-labs-dev/espi.git;branch=master"
 
 RPROVIDES_${PN} += "kernel-module-espi_driver"
 
+KERNEL_MODULE_AUTOLOAD += "espi_driver"
+
 FILES_${PN} = "${libdir}"
