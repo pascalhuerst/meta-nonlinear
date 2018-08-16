@@ -1,10 +1,17 @@
 SUMMARY = "Default nonlinear deploy image"
 
 IMAGE_INSTALL = "\
+	${CORE_IMAGE_EXTRA_INSTALL} \
+	packagegroup-core-boot \
+	wireless-tools iw \
+	usbutils \
+	evtest \
+	strace lsof \
+	iperf3 \
+	i2c-tools \
 	kernel-modules \
 	valgrind gdb \
 	systemd-analyze \
-	strace \
 	"
 
 IMAGE_LINGUAS = " "
