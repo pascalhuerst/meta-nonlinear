@@ -18,6 +18,7 @@ IMAGE_LINGUAS = " "
 #}
 #IMAGE_PREPROCESS_COMMAND += "usr_merge;"
 
+MACHINE_EXTRA_RRECOMMENDS += "kernel-module-lpc_bb_driver kernel-module-epsi_driver"
 
 LICENSE = "MIT"
 
