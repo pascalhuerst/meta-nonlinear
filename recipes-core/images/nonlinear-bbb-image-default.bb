@@ -17,6 +17,7 @@ IMAGE_INSTALL = "\
 	kernel-modules \
 	valgrind gdb \
 	systemd-analyze \
+	nonlinear-rootfs \
 	${NONLINEAR_KMODS} \
 	"
 
