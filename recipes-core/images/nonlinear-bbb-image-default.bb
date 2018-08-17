@@ -20,6 +20,7 @@ IMAGE_INSTALL = "\
 	systemd-analyze \
 	nonlinear-rootfs \
 	${NONLINEAR_KMODS} \
+	linux-firmware-ralink \
 	"
 
 IMAGE_LINGUAS = " "
