@@ -18,10 +18,10 @@ SRC_URI = "\
 	file://etc/systemd/system/dhcpd-wlan.service \
 	file://etc/systemd/system/dhcpd-usbnet.service \
 	file://etc/systemd/system/usbnet.service \
-	file://etc/hostapd.conf \
+	file://etc/hostapd.conf.nonlinear \
 	file://etc/network/interfaces \
 	file://etc/profile.d/add_playground_path.sh \
-	file://etc/ssh/sshd_config \
+	file://etc/ssh/sshd_config.nonlinear \
 	file://LICENSE.LGPL2.1 \
 "
 
