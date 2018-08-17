@@ -6,8 +6,6 @@ RDEPENDS_${PN} += "bash"
 SRC_URI = "\
 	file://mnt/usb-stick/.not-mounted \
 	file://home/root/.ssh/authorized_keys \
-	file://nonlinear/scripts/install-update.sh \
-	file://nonlinear/scripts/time.sh \
 	file://etc/udev/rules.d/100-accesspoint.rules \
 	file://etc/udev/rules.d/100-gether.rules \
 	file://etc/udev/rules.d/100-usbnet.rules \
@@ -26,11 +24,11 @@ SRC_URI = "\
 "
 
 S = "${WORKDIR}"
-FILES_${PN} = "/etc /nonlinear /home/root /nonlinear/scripts /mnt"
+FILES_${PN} = "/etc /home/root /mnt"
 SRCREV = "${AUTOREV}"
 
 do_install() {
-  for dir in etc nonlinear/scripts mnt home/root/.ssh; do
+  for dir in etc mnt home/root/.ssh; do
     rm -rf ${D}/${dir}
     install -d ${D}/${dir}
     cp -r ${WORKDIR}/${dir}/* ${D}/${dir}/
