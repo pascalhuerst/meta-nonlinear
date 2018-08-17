@@ -21,6 +21,7 @@ IMAGE_INSTALL = "\
 	nonlinear-rootfs \
 	${NONLINEAR_KMODS} \
 	linux-firmware-ralink \
+	hostapd \
 	"
 
 IMAGE_LINGUAS = " "
