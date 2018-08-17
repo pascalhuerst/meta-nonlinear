@@ -13,7 +13,7 @@ IMAGE_INSTALL = "\
 	evtest \
 	strace lsof \
 	iperf3 \
-	dhcp \
+	dhcp-server \
 	i2c-tools \
 	kernel-modules \
 	valgrind gdb \
