@@ -1,5 +1,7 @@
 SUMMARY = "Default nonlinear deploy image"
 
+IMAGE_FEATURES = "ssh-server-openssh"
+
 NONLINEAR_KMODS = " \
 	lpc-bb-driver \
 	espi-driver \
@@ -23,6 +25,13 @@ IMAGE_INSTALL = "\
 	linux-firmware-ralink \
 	hostapd \
 	"
+
+update_config_files() {
+  mv ${IMAGE_ROOTFS}/etc/ssh/sshd_config.nonlinear ${IMAGE_ROOTFS}/etc/ssh/sshd_config
+  mv ${IMAGE_ROOTFS}/etc/hostapd.conf.nonlinear ${IMAGE_ROOTFS}/etc/hostapd.conf
+}
+IMAGE_PREPROCESS_COMMAND += "update_config_files;"
+
 
 IMAGE_LINGUAS = " "
 
