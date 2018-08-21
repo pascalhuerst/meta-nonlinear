@@ -21,3 +21,7 @@ EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/pl
 inherit cmake java-native
 
 FILES_${PN} = "/nonlinear/playground"
+
+do_install() {
+	DESTDIR='${D}' cmake_runcmake_build --target playground
+}
