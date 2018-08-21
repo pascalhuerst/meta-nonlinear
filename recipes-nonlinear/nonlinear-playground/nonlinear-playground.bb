@@ -27,4 +27,4 @@ EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/nonlinear/pl
 
 #OECMAKE_SOURCEPATH = "${S}/playground"
 
-FILES_${PN} = "/nonlinear/playground"
+FILES_${PN} = "/nonlinear/playground /etc/systemd/system"
