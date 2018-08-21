@@ -20,6 +20,7 @@ IMAGE_INSTALL = "\
 	kernel-modules \
 	valgrind gdb \
 	systemd-analyze \
+	nonlinear-playground \
 	nonlinear-rootfs \
 	${NONLINEAR_KMODS} \
 	linux-firmware-ralink \
