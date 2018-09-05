@@ -25,6 +25,7 @@ IMAGE_INSTALL = "\
 	${NONLINEAR_KMODS} \
 	linux-firmware-ralink \
 	hostapd \
+	nlimagemaker \
 	"
 
 update_config_files() {
