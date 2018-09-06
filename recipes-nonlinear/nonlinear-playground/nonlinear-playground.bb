@@ -12,7 +12,7 @@ LICENSE = "CLOSED"
 SRC_URI = "git://github.com/nonlinear-labs-dev/C15.git;protocol=git"
 SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
-PV = "master+git-${SRCPV}"
+PV = "RELEASE-2018-08"
 
 #RDEPENDS_${PN} = ""
 

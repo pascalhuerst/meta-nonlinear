@@ -13,4 +13,4 @@ PV = "master+git-${SRCPV}"
 
 inherit cmake
 
-FILES_${PN} = "/usr/sbin"
+FILES_${PN} = "/usr/bin"
