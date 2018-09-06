@@ -9,7 +9,7 @@ DEPENDS = "util-linux glibmm libsoup-2.4 avahi dbus freetype boost gwt"
 LICENSE = "CLOSED"
 #LIC_FILES_CHKSUM = "file://LICENSE.GPL2;md5=751419260aa954499f7abaabaa882bbe"
 
-SRC_URI = "git://github.com/pascalhuerst/C15.git;protocol=git"
+SRC_URI = "git://github.com/nonlinear-labs-dev/C15.git;protocol=git"
 SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 PV = "master+git-${SRCPV}"
