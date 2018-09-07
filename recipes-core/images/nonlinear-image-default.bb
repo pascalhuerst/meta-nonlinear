@@ -1,6 +1,6 @@
 SUMMARY = "Default nonlinear deploy image"
 
-IMAGE_FEATURES = "allow-empty-password empty-root-password"
+IMAGE_FEATURES = "allow-empty-password empty-root-password splash package-management x11-base x11-sato ssh-server-dropbear hwcodecs""
 
 IMAGE_INSTALL = "\
 	kernel-modules \
