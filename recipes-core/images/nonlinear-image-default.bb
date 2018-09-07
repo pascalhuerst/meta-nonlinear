@@ -9,7 +9,6 @@ IMAGE_INSTALL = "\
 	initramfs-live-install-efi \
 	${ROOTFS_BOOTSTRAP_INSTALL} \
 	packagegroup-core-boot \
-	packagegroup-basic \
 	${CORE_IMAGE_EXTRA_INSTALL} \
 	alsa-utils \
 	valgrind gdb \
