@@ -10,7 +10,6 @@ IMAGE_INSTALL = "\
 	${ROOTFS_BOOTSTRAP_INSTALL} \
 	packagegroup-core-boot \
 	packagegroup-basic \
-	packagegroup-core-console \
 	${CORE_IMAGE_EXTRA_INSTALL} \
 	alsa-utils \
 	valgrind gdb \
