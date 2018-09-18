@@ -1,6 +1,6 @@
 SUMMARY = "Default nonlinear deploy image"
 
-IMAGE_FEATURES = "ssh-server-openssh allow-empty-password empty-root-password"
+IMAGE_FEATURES = "ssh-server-dropbear allow-empty-password empty-root-password"
 
 NONLINEAR_KMODS = " \
 	lpc-bb-driver \
