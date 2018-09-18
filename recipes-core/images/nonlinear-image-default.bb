@@ -16,6 +16,7 @@ IMAGE_INSTALL = "\
 	strace \
 	jack-server jack-utils \
 	nonlinear-nlaudio \
+	connman \
 	"
 
 IMAGE_LINGUAS = " "
