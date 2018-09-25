@@ -21,6 +21,7 @@ IMAGE_INSTALL = "\
 	nonlinear-rootfs \
 	${NONLINEAR_KMODS} \
 	nlimagemaker \
+	mtd \
 	"
 
 IMAGE_LINGUAS = " "
