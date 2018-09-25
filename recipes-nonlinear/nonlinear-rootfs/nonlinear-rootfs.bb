@@ -20,6 +20,7 @@ SRC_URI = "\
 	file://etc/network/interfaces \
 	file://etc/profile.d/add_playground_path.sh \
 	file://etc/ssh/sshd_config.nonlinear \
+	file://boot/EFI/BOOT/grub.cfg \
 	file://LICENSE.LGPL2.1 \
 "
 
