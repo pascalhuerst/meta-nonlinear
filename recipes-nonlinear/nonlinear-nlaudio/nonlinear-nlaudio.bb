@@ -18,5 +18,5 @@ PV = "master+git-${SRCPV}"
 inherit cmake
 
 # I did not manage to use only variables here and I'm quite annoyed!
-FILES_${PN} = "${libdir} ${bindir}"
+FILES_${PN} = "${libdir} ${bindir} /etc/systemd/system"
 FILES_${PN}-dbg = "${libdir}/.debug /usr/src ${includedir}/nlaudio"
