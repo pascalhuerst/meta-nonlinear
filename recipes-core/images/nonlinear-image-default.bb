@@ -3,6 +3,7 @@ SUMMARY = "Default nonlinear deploy image"
 IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ssh-server-openssh"
 
 IMAGE_INSTALL = "\
+	packagegroup-core-full-cmdline \
 	kernel-modules \
 	initramfs-live-boot \
 	initramfs-live-install \
