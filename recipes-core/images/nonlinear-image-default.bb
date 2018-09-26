@@ -13,7 +13,6 @@ IMAGE_INSTALL = "\
 	alsa-utils \
 	valgrind gdb \
 	systemd-analyze \
-	systemd-networkd \
 	strace \
 	jack-server jack-utils \
 	nonlinear-nlaudio \
