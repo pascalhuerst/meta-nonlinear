@@ -11,30 +11,15 @@ SRC_URI = "\
 "
 
 S = "${WORKDIR}"
-FILES_${PN} = "/etc /home/root /mnt"
+FILES_${PN} = "/etc /home/root /boot"
 SRCREV = "${AUTOREV}"
 
 do_install() {
-  for dir in etc mnt home/root/.ssh; do
+  for dir in home/root/.ssh boot; do
     rm -rf ${D}/${dir}
     install -d ${D}/${dir}
     cp -r ${WORKDIR}/${dir}/* ${D}/${dir}/
   done
 
   chmod 0600 ${D}/home/root/.ssh/authorized_keys
-
-  # systemd services
-  install -d ${D}/etc/systemd/system/multi-user.target.wants
-
-  for service in \
-    ; do
-
-    ln -s ../${service}.service ${D}/etc/systemd/system/multi-user.target.wants/
-  done
-
-  for mount in \
-    ; do
-
-    ln -s ../${mount}.mount ${D}/etc/systemd/system/multi-user.target.wants/
-  done
 }
