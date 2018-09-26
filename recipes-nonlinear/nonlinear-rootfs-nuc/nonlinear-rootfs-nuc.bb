@@ -15,7 +15,7 @@ FILES_${PN} = "/etc /home/root /boot"
 SRCREV = "${AUTOREV}"
 
 do_install() {
-  for dir in home/root/.ssh boot; do
+  for dir in home/root/.ssh boot etc/network; do
     rm -rf ${D}/${dir}
     install -d ${D}/${dir}
     cp -r ${WORKDIR}/${dir}/* ${D}/${dir}/
