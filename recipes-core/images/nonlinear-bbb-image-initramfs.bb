@@ -7,7 +7,8 @@ INITRAMFS_SCRIPTS ?= "\
                       initramfs-module-udev \
                      "
 
-PACKAGE_INSTALL = "${INITRAMFS_SCRIPTS} ${VIRTUAL-RUNTIME_base-utils} udev base-passwd"
+IMAGE_FSTYPES = "${INITRAMFS_FSTYPES}"
+PACKAGE_INSTALL = "${IMAGE_INSTALL} ${INITRAMFS_SCRIPTS} ${VIRTUAL-RUNTIME_base-utils} udev base-passwd"
 
 NONLINEAR_KMODS = " \
 	lpc-bb-driver \
@@ -21,7 +22,6 @@ IMAGE_INSTALL = "\
 	nonlinear-rootfs \
 	${NONLINEAR_KMODS} \
 	nlimagemaker \
-	mtd \
 	"
 
 IMAGE_LINGUAS = " "
