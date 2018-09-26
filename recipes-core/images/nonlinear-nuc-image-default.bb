@@ -4,6 +4,7 @@ IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ss
 
 IMAGE_INSTALL = "\
 	packagegroup-core-full-cmdline \
+	coreutils \
 	kernel-modules \
 	initramfs-live-boot \
 	initramfs-live-install \
