@@ -11,7 +11,7 @@ IMAGE_INSTALL = "\
 	packagegroup-core-boot \
 	${CORE_IMAGE_EXTRA_INSTALL} \
 	alsa-utils \
-	valgrind gdb \
+	valgrind gdb gdbserver \
 	systemd-analyze \
 	strace \
 	jack-server jack-utils \
