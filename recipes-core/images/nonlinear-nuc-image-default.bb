@@ -1,4 +1,4 @@
-SUMMARY = "Default nonlinear deploy image"
+SUMMARY = "Default nonlinear NUC deploy image"
 
 IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ssh-server-openssh"
 
@@ -22,19 +22,6 @@ IMAGE_INSTALL = "\
 
 IMAGE_LINGUAS = " "
 
-#usr_merge() {
-#  for d in lib bin sbin; do
-#    cp -a ${IMAGE_ROOTFS}/$d/* ${IMAGE_ROOTFS}/usr/$d/
-#    rm -rf ${IMAGE_ROOTFS}/$d
-#    ln -s usr/$d ${IMAGE_ROOTFS}/$d
-#  done
-#}
-#IMAGE_PREPROCESS_COMMAND += "usr_merge;"
-
-
 LICENSE = "MIT"
 
 inherit core-image
-
-#IMAGE_ROOTFS_SIZE ?= "8192"
-#IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "" ,d)}"
