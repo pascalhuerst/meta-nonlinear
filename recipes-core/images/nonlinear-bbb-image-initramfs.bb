@@ -19,7 +19,7 @@ IMAGE_INSTALL = "\
 	${CORE_IMAGE_EXTRA_INSTALL} \
 	packagegroup-core-boot \
 	kernel-modules \
-	nonlinear-rootfs \
+	nonlinear-rootfs-bbb \
 	${NONLINEAR_KMODS} \
 	nlimagemaker \
 	"

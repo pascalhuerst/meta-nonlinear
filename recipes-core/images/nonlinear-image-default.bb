@@ -1,6 +1,6 @@
 SUMMARY = "Default nonlinear deploy image"
 
-IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ssh-server-dropbear"
+IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ssh-server-openssh"
 
 IMAGE_INSTALL = "\
 	kernel-modules \
@@ -13,10 +13,11 @@ IMAGE_INSTALL = "\
 	alsa-utils \
 	valgrind gdb \
 	systemd-analyze \
+	systemd-networkd \
 	strace \
 	jack-server jack-utils \
 	nonlinear-nlaudio \
-	connman \
+	nonlinear-rootfs-nuc \
 	"
 
 IMAGE_LINGUAS = " "

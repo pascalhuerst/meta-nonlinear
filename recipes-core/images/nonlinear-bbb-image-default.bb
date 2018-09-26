@@ -21,7 +21,7 @@ IMAGE_INSTALL = "\
 	valgrind gdb \
 	systemd-analyze \
 	nonlinear-playground \
-	nonlinear-rootfs \
+	nonlinear-rootfs-bbb \
 	${NONLINEAR_KMODS} \
 	linux-firmware-ralink \
 	hostapd \
