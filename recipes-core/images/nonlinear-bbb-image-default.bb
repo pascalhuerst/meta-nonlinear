@@ -26,6 +26,7 @@ IMAGE_INSTALL = "\
 	linux-firmware-ralink \
 	hostapd \
 	nlimagemaker \
+	kbd-keymaps \
 	"
 
 update_config_files() {
