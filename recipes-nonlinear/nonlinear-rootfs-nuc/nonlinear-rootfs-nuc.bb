@@ -7,11 +7,12 @@ SRC_URI = "\
 	file://home/root/.ssh/authorized_keys \
 	file://etc/network/interfaces \
 	file://boot/EFI/BOOT/grub.cfg \
+	file:///var/lib/alsa/asound.state \
 	file://LICENSE.LGPL2.1 \
 "
 
 S = "${WORKDIR}"
-FILES_${PN} = "/etc /home/root /boot"
+FILES_${PN} = "/etc /home/root /boot /var/lib/alsa"
 SRCREV = "${AUTOREV}"
 
 do_install() {
