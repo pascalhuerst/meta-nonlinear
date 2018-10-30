@@ -7,16 +7,13 @@ SRC_URI = "\
 	file://home/root/.ssh/authorized_keys \
 	file://etc/network/interfaces \
 	file://boot/EFI/BOOT/grub.cfg \
-	file:///var/lib/alsa/asound.state \
+	file:///var/lib/alsa/asound.state.nonlinear \
 	file://LICENSE.LGPL2.1 \
 "
 
 S = "${WORKDIR}"
 FILES_${PN} = "/etc /home/root /boot /var/lib/alsa"
 SRCREV = "${AUTOREV}"
-
-ALTERNATIVE_${PN}-asound.cfg = "${D}/lib/alsa/asound.cfg"
-ALTERNATIVE_PRIORITY = "50"
 
 do_install() {
   for dir in home/root/.ssh boot etc/network var/lib/alsa; do
