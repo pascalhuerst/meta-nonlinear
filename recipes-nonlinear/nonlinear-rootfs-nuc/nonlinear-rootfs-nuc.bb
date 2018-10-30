@@ -7,7 +7,7 @@ SRC_URI = "\
 	file://home/root/.ssh/authorized_keys \
 	file://etc/network/interfaces \
 	file://boot/EFI/BOOT/grub.cfg \
-	file:///var/lib/alsa/asound.state.nonlinear \
+	file://var/lib/alsa/asound.state.nonlinear \
 	file://LICENSE.LGPL2.1 \
 "
 
