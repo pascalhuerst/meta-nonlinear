@@ -3,17 +3,14 @@ SUMMARY = "Default nonlinear NUC deploy image"
 IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ssh-server-openssh"
 
 IMAGE_INSTALL = "\
-	coreutils \
-	kernel-modules \
-	initramfs-live-boot \
-	initramfs-live-install \
-	initramfs-live-install-efi \
-	${ROOTFS_BOOTSTRAP_INSTALL} \
 	${CORE_IMAGE_EXTRA_INSTALL} \
+	packagegrounp-core-boot \
+	usbutils \
+	kernel-modules \
+	initramfs-live-install-efi \
 	alsa-utils \
 	valgrind gdb gdbserver \
 	systemd-analyze \
-	systemd-networkd \
 	strace \
 	jack-server jack-utils \
 	nonlinear-nlaudio \
