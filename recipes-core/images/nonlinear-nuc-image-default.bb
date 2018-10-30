@@ -21,6 +21,13 @@ IMAGE_INSTALL = "\
 	nonlinear-rootfs-nuc \
 	"
 
+
+update_config_files() {
+  mv ${IMAGE_ROOTFS}/var/lib/alsa/asound.state.nonlinear ${IMAGE_ROOTFS}/var/lib/alsa/asound.state
+}
+IMAGE_PREPROCESS_COMMAND += "update_config_files;"
+
+
 IMAGE_LINGUAS = " "
 
 LICENSE = "MIT"
