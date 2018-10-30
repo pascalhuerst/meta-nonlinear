@@ -4,7 +4,7 @@ IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ss
 
 IMAGE_INSTALL = "\
 	${CORE_IMAGE_EXTRA_INSTALL} \
-	packagegrounp-core-boot \
+	packagegroup-core-boot \
 	usbutils \
 	kernel-modules \
 	initramfs-live-install-efi \
