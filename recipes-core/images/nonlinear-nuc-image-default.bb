@@ -3,12 +3,15 @@ SUMMARY = "Default nonlinear NUC deploy image"
 IMAGE_FEATURES = "allow-empty-password empty-root-password package-management ssh-server-openssh"
 
 IMAGE_INSTALL = "\
-	${CORE_IMAGE_EXTRA_INSTALL} \
-	packagegroup-core-boot \
-	usbutils \
 	kernel-modules \
+	initramfs-live-boot \
+	initramfs-live-install \
 	initramfs-live-install-efi \
+	${ROOTFS_BOOTSTRAP_INSTALL} \
+	packagegroup-core-boot \
+	${CORE_IMAGE_EXTRA_INSTALL} \
 	alsa-utils \
+	usbutils \
 	valgrind gdb gdbserver \
 	systemd-analyze \
 	strace \
@@ -17,7 +20,6 @@ IMAGE_INSTALL = "\
 	nonlinear-rootfs-nuc \
 	nonlinear-keyboard \
 	"
-
 
 update_config_files() {
   mv ${IMAGE_ROOTFS}/var/lib/alsa/asound.state.nonlinear ${IMAGE_ROOTFS}/var/lib/alsa/asound.state
