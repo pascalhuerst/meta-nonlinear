@@ -19,6 +19,7 @@ IMAGE_INSTALL = "\
 	jack-server jack-utils \
 	nonlinear-nlaudio \
 	nonlinear-rootfs-nuc \
+	nonlinear-keyboard \
 	"
 
 
