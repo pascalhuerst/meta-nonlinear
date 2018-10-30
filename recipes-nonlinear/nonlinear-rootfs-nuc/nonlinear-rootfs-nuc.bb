@@ -16,7 +16,7 @@ FILES_${PN} = "/etc/systemd/network /home/root /boot /var/lib/alsa"
 SRCREV = "${AUTOREV}"
 
 do_install() {
-  for dir in home/root/.ssh boot etc/network var/lib/alsa; do
+  for dir in home/root/.ssh boot etc/systemd/network var/lib/alsa; do
     rm -rf ${D}/${dir}
     install -d ${D}/${dir}
     cp -r ${WORKDIR}/${dir}/* ${D}/${dir}/
