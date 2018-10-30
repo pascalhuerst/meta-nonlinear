@@ -15,7 +15,7 @@ S = "${WORKDIR}"
 FILES_${PN} = "/etc /home/root /boot /var/lib/alsa"
 SRCREV = "${AUTOREV}"
 
-ALTERNATIVE_nonlinear-rootfs-nuc = "asound.cfg"
+ALTERNATIVE_${PN}-asound.cfg = "${D}/lib/alsa/asound.cfg"
 ALTERNATIVE_PRIORITY = "50"
 
 do_install() {
