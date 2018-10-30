@@ -5,14 +5,14 @@ RDEPENDS_${PN} += "bash"
 
 SRC_URI = "\
 	file://home/root/.ssh/authorized_keys \
-	file://etc/network/interfaces \
+	file://etc/systemd/network/wired.network \
 	file://boot/EFI/BOOT/grub.cfg \
 	file://var/lib/alsa/asound.state.nonlinear \
 	file://LICENSE.LGPL2.1 \
 "
 
 S = "${WORKDIR}"
-FILES_${PN} = "/etc /home/root /boot /var/lib/alsa"
+FILES_${PN} = "/etc/systemd/network /home/root /boot /var/lib/alsa"
 SRCREV = "${AUTOREV}"
 
 do_install() {
