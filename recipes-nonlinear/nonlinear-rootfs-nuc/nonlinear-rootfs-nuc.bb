@@ -15,6 +15,9 @@ S = "${WORKDIR}"
 FILES_${PN} = "/etc /home/root /boot /var/lib/alsa"
 SRCREV = "${AUTOREV}"
 
+ALTERNATIVE_nonlinear-rootfs-nuc = "asound.cfg"
+ALTERNATIVE_PRIORITY = "50"
+
 do_install() {
   for dir in home/root/.ssh boot etc/network var/lib/alsa; do
     rm -rf ${D}/${dir}
